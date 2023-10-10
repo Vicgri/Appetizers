@@ -9,7 +9,7 @@ import Foundation
 
 //Using decodable since we only retrive and receiving data.
 //If we were going to manipulating the data we would need encodable
-struct Appetizer: Decodable {
+struct Appetizer: Decodable, Identifiable {
   let id: Int
   let name: String
   let description: String
@@ -37,6 +37,10 @@ struct MockData {
                                          protein: 99,
                                          carbs: 99)
   
+  // array to help us build a list
+  static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer ]
+  
 }
+
 
 
