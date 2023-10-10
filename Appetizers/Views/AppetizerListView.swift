@@ -14,7 +14,7 @@ struct AppetizerListView: View {
         .navigationTitle("Appetizers")
     }
   }
-}
+} 
 
 #Preview {
     AppetizerListView()
