@@ -15,10 +15,17 @@ struct ActivityIndicator: UIViewRepresentable {
     return activityIndicatorView
   }
   
-  func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-  }
+  func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
   
+}
 
-  
-  
+struct LoadingView: View {
+  var body: some View {
+    ZStack {
+      Color(.systemBackground)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+      
+      ActivityIndicator()
+    }
+  }
 }
