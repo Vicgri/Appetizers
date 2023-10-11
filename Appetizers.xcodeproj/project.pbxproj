@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DDED5992AD6A153004E3B64 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */; };
 		5DFFF41C2AD56B5700368677 /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF41B2AD56B5700368677 /* AppetizersApp.swift */; };
 		5DFFF41E2AD56B5700368677 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF41D2AD56B5700368677 /* AppetizerTabView.swift */; };
 		5DFFF4202AD56B5900368677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFF41F2AD56B5900368677 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		5DFFF4182AD56B5700368677 /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFFF41B2AD56B5700368677 /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
 		5DFFF41D2AD56B5700368677 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				5DFFF41F2AD56B5900368677 /* Assets.xcassets */,
 				5DFFF4212AD56B5900368677 /* Preview Content */,
 				5DFFF4302AD5788500368677 /* Appetizer.swift */,
+				5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DFFF4312AD5788500368677 /* Appetizer.swift in Sources */,
+				5DDED5992AD6A153004E3B64 /* AppetizerListCell.swift in Sources */,
 				5DFFF42C2AD56DE000368677 /* AccountView.swift in Sources */,
 				5DFFF41E2AD56B5700368677 /* AppetizerTabView.swift in Sources */,
 				5DFFF41C2AD56B5700368677 /* AppetizersApp.swift in Sources */,

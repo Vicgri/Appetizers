@@ -12,13 +12,8 @@ struct AppetizerListView: View {
     NavigationView {
       List(MockData.appetizers) { appetizer in
         
-        HStack {
-          Image("asian-flank-steak")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 120, height: 90)
-            .cornerRadius(8)
-        }
+      AppetizerListCell(appetizer: appetizer)
+        
       }
       .navigationTitle("Appetizers")
     }
