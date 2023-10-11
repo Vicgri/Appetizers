@@ -21,7 +21,7 @@ struct Appetizer: Decodable, Identifiable {
 }
 
 // Helper response to handle the nested Json
-struct AppetizerResponse {
+struct AppetizerResponse: Decodable {
   let request: [Appetizer]
   
 }

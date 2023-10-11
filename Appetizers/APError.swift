@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum APError: Error {
+  case invalidURL
+  case invalidResponse //404 or such errors
+  case invalidData  // can´t parse the data
+  case unableToComplete // general error
+  
+}
