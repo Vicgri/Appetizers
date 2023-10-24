@@ -11,6 +11,8 @@
 		5D486A022AD6F1BA0093626D /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D486A012AD6F1BA0093626D /* AppetizerDetailView.swift */; };
 		5D486A052AD7E8570093626D /* ApButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D486A042AD7E8570093626D /* ApButton.swift */; };
 		5D9A06332AE7D0D800A5BEC6 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06322AE7D0D800A5BEC6 /* AccountViewModel.swift */; };
+		5D9A06352AE7D90B00A5BEC6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */; };
+		5D9A06382AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */; };
 		5DDED5992AD6A153004E3B64 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */; };
 		5DDED59B2AD6A325004E3B64 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED59A2AD6A325004E3B64 /* NetworkManager.swift */; };
 		5DDED59D2AD6A5D2004E3B64 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED59C2AD6A5D2004E3B64 /* APError.swift */; };
@@ -34,6 +36,8 @@
 		5D486A012AD6F1BA0093626D /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		5D486A042AD7E8570093626D /* ApButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApButton.swift; sourceTree = "<group>"; };
 		5D9A06322AE7D0D800A5BEC6 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		5DDED59A2AD6A325004E3B64 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5DDED59C2AD6A5D2004E3B64 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5DDED5A42AD6C35E004E3B64 /* Color+Extension.swift */,
+				5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -178,6 +183,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		5D9A06362AE7F99A00A5BEC6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5DFFF40F2AD56B5700368677 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +210,7 @@
 		5DFFF41A2AD56B5700368677 /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				5D9A06362AE7F99A00A5BEC6 /* Protocols */,
 				5D4869FC2AD6F03F0093626D /* Model */,
 				5D4869F82AD6F0000093626D /* Utilities */,
 				5DFFF42F2AD5765100368677 /* Screens */,
@@ -310,10 +324,12 @@
 				5DFFF41C2AD56B5700368677 /* AppetizersApp.swift in Sources */,
 				5D4869F32AD6E3AD0093626D /* RemoteImage.swift in Sources */,
 				5D486A052AD7E8570093626D /* ApButton.swift in Sources */,
+				5D9A06352AE7D90B00A5BEC6 /* String+Ext.swift in Sources */,
 				5D486A022AD6F1BA0093626D /* AppetizerDetailView.swift in Sources */,
 				5DDED5A12AD6BE1F004E3B64 /* Alert.swift in Sources */,
 				5DFFF42A2AD56DC800368677 /* AppetizerListView.swift in Sources */,
 				5DFFF42E2AD56DEB00368677 /* OrderView.swift in Sources */,
+				5D9A06382AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift in Sources */,
 				5DDED5A52AD6C35E004E3B64 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
