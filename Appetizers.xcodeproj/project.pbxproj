@@ -14,6 +14,7 @@
 		5D9A06352AE7D90B00A5BEC6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */; };
 		5D9A06382AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */; };
 		5D9A063E2AE8504700A5BEC6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A063D2AE8504700A5BEC6 /* User.swift */; };
+		5D9A06402AE8566600A5BEC6 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A063F2AE8566600A5BEC6 /* OrderView.swift */; };
 		5DDED5992AD6A153004E3B64 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */; };
 		5DDED59B2AD6A325004E3B64 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED59A2AD6A325004E3B64 /* NetworkManager.swift */; };
 		5DDED59D2AD6A5D2004E3B64 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDED59C2AD6A5D2004E3B64 /* APError.swift */; };
@@ -28,7 +29,6 @@
 		5DFFF4232AD56B5900368677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFFF4222AD56B5900368677 /* Preview Assets.xcassets */; };
 		5DFFF42A2AD56DC800368677 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF4292AD56DC800368677 /* AppetizerListView.swift */; };
 		5DFFF42C2AD56DE000368677 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF42B2AD56DE000368677 /* AccountView.swift */; };
-		5DFFF42E2AD56DEB00368677 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF42D2AD56DEB00368677 /* OrderView.swift */; };
 		5DFFF4312AD5788500368677 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFFF4302AD5788500368677 /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,7 @@
 		5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		5D9A063D2AE8504700A5BEC6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5D9A063F2AE8566600A5BEC6 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		5DDED5982AD6A153004E3B64 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		5DDED59A2AD6A325004E3B64 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5DDED59C2AD6A5D2004E3B64 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		5DFFF4222AD56B5900368677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5DFFF4292AD56DC800368677 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		5DFFF42B2AD56DE000368677 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		5DFFF42D2AD56DEB00368677 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		5DFFF4302AD5788500368677 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 		5D4869F72AD6EC410093626D /* OrderView */ = {
 			isa = PBXGroup;
 			children = (
-				5DFFF42D2AD56DEB00368677 /* OrderView.swift */,
+				5D9A063F2AE8566600A5BEC6 /* OrderView.swift */,
 			);
 			path = OrderView;
 			sourceTree = "<group>";
@@ -331,8 +331,8 @@
 				5D486A022AD6F1BA0093626D /* AppetizerDetailView.swift in Sources */,
 				5DDED5A12AD6BE1F004E3B64 /* Alert.swift in Sources */,
 				5DFFF42A2AD56DC800368677 /* AppetizerListView.swift in Sources */,
-				5DFFF42E2AD56DEB00368677 /* OrderView.swift in Sources */,
 				5D9A06382AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift in Sources */,
+				5D9A06402AE8566600A5BEC6 /* OrderView.swift in Sources */,
 				5DDED5A52AD6C35E004E3B64 /* Color+Extension.swift in Sources */,
 				5D9A063E2AE8504700A5BEC6 /* User.swift in Sources */,
 			);
