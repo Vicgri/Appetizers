@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct AppetizerDetailView: View {
-
-let appetizer: Appetizer
-@Binding var isShowingDetail: Bool
-
+  
+  
+  //Since AppetizerDetailView is a child of our TabView (AppetizersApp) it can find our Order within the environment. If this view didnt have connection with the environment, the app will crash.
+  @EnvironmentObject var order: Order
+  
+  let appetizer: Appetizer
+  @Binding var isShowingDetail: Bool
+  
   var body: some View {
     VStack {
       AppetizerRemoteImage(urlString: appetizer.imageURL)
@@ -37,10 +41,13 @@ let appetizer: Appetizer
       Spacer()
       
       Button {
-        print("tapped")
+        order.add(appetizer)
+        // can also be done like this if you dont have a function
+        // order.items.append(appetizer)
+        isShowingDetail = false //the appetizer card disappears when the order button is used
       } label: {
         ApButton (title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
-            
+        
       }
       .padding(.bottom, 30)
     }
@@ -58,25 +65,25 @@ let appetizer: Appetizer
 }
 
 #Preview {
-AppetizerDetailView(appetizer: MockData.sampleAppetizer, 
-                    isShowingDetail: .constant(true))
+  AppetizerDetailView(appetizer: MockData.sampleAppetizer,
+                      isShowingDetail: .constant(true))
 }
 
 
 struct NutritionInfo: View {
-let title: String
-let value: Int
-
-var body: some View {
-  VStack (spacing: 5){
-    Text(title)
-      .bold()
-      .font(.caption)
-    
-    Text("\(value)")
-      .foregroundColor(.secondary)
-      .fontWeight(.semibold)
-      .italic()
+  let title: String
+  let value: Int
+  
+  var body: some View {
+    VStack (spacing: 5){
+      Text(title)
+        .bold()
+        .font(.caption)
+      
+      Text("\(value)")
+        .foregroundColor(.secondary)
+        .fontWeight(.semibold)
+        .italic()
+    }
   }
-}
 }
