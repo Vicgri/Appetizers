@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct OrderView: View {
-  
-  @State private var orderItems = MockData.orderItems
-  
-  var body: some View {
-    NavigationView {
+
+@State private var orderItems = MockData.orderItems
+
+var body: some View {
+  NavigationView {
+    ZStack {
       VStack {
         List {
           ForEach(orderItems) { appetizer in
@@ -30,15 +31,20 @@ struct OrderView: View {
         .padding(.bottom, 25)
       }
       
-      .navigationTitle("Orders")
+      if orderItems.isEmpty {
+        EmptyStates(imageName: "empty-order", message: "You have no items in your order. \nPlease add an appetizer!")
+      }
     }
+    
+    .navigationTitle("Orders")
   }
-  func deleteItems (at offesets: IndexSet) {
-    orderItems.remove(atOffsets: offesets)
-  }
-  
+}
+func deleteItems (at offesets: IndexSet) {
+  orderItems.remove(atOffsets: offesets)
+}
+
 }
 
 #Preview {
-  OrderView()
+OrderView()
 }

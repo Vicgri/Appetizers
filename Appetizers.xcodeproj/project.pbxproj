@@ -10,6 +10,7 @@
 		5D4869F32AD6E3AD0093626D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4869F22AD6E3AD0093626D /* RemoteImage.swift */; };
 		5D486A022AD6F1BA0093626D /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D486A012AD6F1BA0093626D /* AppetizerDetailView.swift */; };
 		5D486A052AD7E8570093626D /* ApButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D486A042AD7E8570093626D /* ApButton.swift */; };
+		5D90CBC62AE96BBF001B65A2 /* EmptyStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D90CBC52AE96BBF001B65A2 /* EmptyStates.swift */; };
 		5D9A06332AE7D0D800A5BEC6 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06322AE7D0D800A5BEC6 /* AccountViewModel.swift */; };
 		5D9A06352AE7D90B00A5BEC6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */; };
 		5D9A06382AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */; };
@@ -36,6 +37,7 @@
 		5D4869F22AD6E3AD0093626D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		5D486A012AD6F1BA0093626D /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		5D486A042AD7E8570093626D /* ApButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApButton.swift; sourceTree = "<group>"; };
+		5D90CBC52AE96BBF001B65A2 /* EmptyStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStates.swift; sourceTree = "<group>"; };
 		5D9A06322AE7D0D800A5BEC6 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		5D9A06342AE7D90B00A5BEC6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		5D9A06372AE7F9AF00A5BEC6 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		5D4869FD2AD6F0580093626D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D90CBC42AE96BA6001B65A2 /* Empty States */,
 				5D486A032AD7E8410093626D /* Buttons */,
 				5D4869FE2AD6F06A0093626D /* UIKit Components */,
 				5D486A002AD6F0770093626D /* Image */,
@@ -184,6 +187,14 @@
 				5DDF9B5E2ADE873B000DB7FB /* XDismissButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		5D90CBC42AE96BA6001B65A2 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				5D90CBC52AE96BBF001B65A2 /* EmptyStates.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 		5D9A06362AE7F99A00A5BEC6 /* Protocols */ = {
@@ -323,6 +334,7 @@
 				5DFFF42C2AD56DE000368677 /* AccountView.swift in Sources */,
 				5DDED5A32AD6C292004E3B64 /* LoadingView.swift in Sources */,
 				5DFFF41E2AD56B5700368677 /* AppetizerTabView.swift in Sources */,
+				5D90CBC62AE96BBF001B65A2 /* EmptyStates.swift in Sources */,
 				5DDED59B2AD6A325004E3B64 /* NetworkManager.swift in Sources */,
 				5DFFF41C2AD56B5700368677 /* AppetizersApp.swift in Sources */,
 				5D4869F32AD6E3AD0093626D /* RemoteImage.swift in Sources */,
